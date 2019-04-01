@@ -1,0 +1,173 @@
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+body {
+    font-family: Avenir, Helvetica, sans-serif;
+    background: url(../images/star-wars-1.jpg) no-repeat center center fixed; 
+    /* background: url(../images/star-wars-2.jpg) no-repeat center center fixed;  */
+    /* background: url(../images/star-wars-3.jpg) no-repeat center center fixed;  */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  
+  #audioCntrl{
+
+    float: left;
+  }
+  
+  #hd1{
+  float: left;
+  color: blue;
+  font-family: Avenir, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 2%;
+  text-align: center;
+  height: 55px;
+  width: 50%;
+  background-color: yellow; 
+  border: 5px solid;
+	border-color: red;
+}
+
+.wrapper {
+  clear: both;
+  text-align: center;
+}
+
+.button {
+  clear: both;
+  position: absolute;
+  top: 80%;
+  right: 45%;
+  /* left: 50%; */
+  height: 50px;
+  width:  150px;
+  background-color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation: example infinite;
+  animation-duration: 4s;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: bolder;
+  /* display: none; */
+}
+
+
+
+#playPage{
+  /* background-color: white; */
+  height: 680px;
+  width: 100%;
+  display: none;
+}
+
+.character-image {
+	display: inline-block;
+  height: 145px;
+	background-color: white;
+	border: solid;
+  border-color: green;
+}
+
+.character-image p {
+	text-align: center;
+  margin: 0px 2px 0px 2px;
+}
+
+.character-image{
+  height: 152px;
+}
+
+#chosen-character {
+  height: 190px;
+}
+
+h2{
+  font-family: Avenir, Helvetica, sans-serif;
+}
+#chosen-character h2 {
+	font-size: 2em;
+  color: greenyellow;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+}
+
+.chosen-character {
+	border-color: #dd48f0;
+  background-color: #5bf048;
+ 
+  
+}
+
+#enemies-available h2 {
+	font-size: 2em;
+  color: greenyellow;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  
+
+}
+
+.enemy-character {
+	border-color: #48f0dd;
+	background-color: #f0485b;
+  margin: 2px 2px 2px 2px;
+ 
+  
+}
+
+#fight-section h2 {
+	font-size: 2em;
+  color: greenyellow;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+
+}
+
+#defender-section {
+  height: 210px;
+  
+}
+
+#defender-section h2 {
+	font-size: 2em;
+  color: greenyellow;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+
+}
+
+.defender-character {
+	border-color: #485bf0;
+  background-color: #f0dd48;
+  
+}
+
+#game-message {
+	font-size: 1.5em;
+	font-weight: bold;
+  color: orangered;
+  background-color: #5bf048;
+  text-align: center;
+}
